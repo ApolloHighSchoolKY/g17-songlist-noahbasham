@@ -20,14 +20,14 @@ public class MusicDownloads{
   public void updateDownloadInfo(List<String> titles)
   {
     /* To be implemented in part (b) */
-    for(int i=0;i<titles.length();i++)
+    for(String x: titles)
     {
-      if(titles.get(i).getDownloadInfo==null)
+      if(x.getDownloadInfo==null)
       {
-        downloadList.add(new DownloadInfo(titles.get(i)));
+        downloadList.add(new DownloadInfo(x));
       }
       else
-        titles.get(i).getDownloadInfo.incrementTimesDownloaded();
+        x.getDownloadInfo.incrementTimesDownloaded();
     }
   }
 }
