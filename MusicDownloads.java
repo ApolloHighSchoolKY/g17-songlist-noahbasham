@@ -22,12 +22,12 @@ public class MusicDownloads{
     /* To be implemented in part (b) */
     for(String x: titles)
     {
-      if(x.getDownloadInfo==null)
+      if(getDownloadInfo(x)==null)
       {
         downloadList.add(new DownloadInfo(x));
       }
       else
-        x.getDownloadInfo.incrementTimesDownloaded();
+        getDownloadInfo(x).incrementTimesDownloaded();
     }
   }
 }
